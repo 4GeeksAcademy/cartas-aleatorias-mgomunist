@@ -1,1 +1,21 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.suit {
+  font-size: 120px;
+}
+
+.value {
+  font-size: 150px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#width-input,
+#height-input {
+  display: block;
+  margin: 10px auto;
+}
+
+#generate-button {
+  display: block;
+  margin: 20px auto;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,18 +12,24 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body
+    class="bg-success d-flex flex-column text-center justify-content-center min-vh-100"
+  >
+    <h1 id="title">Random Card Generator</h1>
+    <div id="card" class="container-fluid d-flex justify-content-center">
+      <div class="card my-auto" style="width: 400px; height: 600px;">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title suit text-start" id="topSuit">♣</h5>
+          <p class="card-text value text-center" id="cardNum">7</p>
+          <h5 class="card-title suit text-end" id="bottomSuit">♣</h5>
+        </div>
       </div>
+    </div>
+
+    <div class="text-center my-2">
+      <input id="width-input" type="number" placeholder="Width" />
+      <input id="height-input" type="number" placeholder="Height" />
+      <button id="generate-button" class="btn btn-primary">Generate</button>
     </div>
   </body>
 </html>
